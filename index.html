@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FLAME: Navigating and Reasoning with Multimodal LLM in Urban Environments</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/favicon.svg">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+<!--  <div class="navbar-menu">-->
+<!--    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">-->
+<!--      <a class="navbar-item" href="https://keunhong.com">-->
+<!--      <span class="icon">-->
+<!--          <i class="fas fa-home"></i>-->
+<!--      </span>-->
+<!--      </a>-->
+
+<!--      <div class="navbar-item has-dropdown is-hoverable">-->
+<!--        <a class="navbar-link">-->
+<!--          More Research-->
+<!--        </a>-->
+<!--        <div class="navbar-dropdown">-->
+<!--          <a class="navbar-item" href="https://hypernerf.github.io">-->
+<!--            HyperNeRF-->
+<!--          </a>-->
+<!--          <a class="navbar-item" href="https://nerfies.github.io">-->
+<!--            Nerfies-->
+<!--          </a>-->
+<!--          <a class="navbar-item" href="https://latentfusion.github.io">-->
+<!--            LatentFusion-->
+<!--          </a>-->
+<!--          <a class="navbar-item" href="https://photoshape.github.io">-->
+<!--            PhotoShape-->
+<!--          </a>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </div>-->
+
+<!--  </div>-->
+</nav>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">FLAME: Navigating and Reasoning with Multimodal LLM in Urban Environments</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">Anonymous ECCV Submission</span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+<!--              <span class="link-block">-->
+<!--                <a href="https://arxiv.org/pdf/2011.12948"-->
+<!--                   class="external-link button is-normal is-rounded is-dark">-->
+<!--                  <span class="icon">-->
+<!--                      <i class="fas fa-file-pdf"></i>-->
+<!--                  </span>-->
+<!--                  <span>Paper</span>-->
+<!--                </a>-->
+<!--              </span>-->
+<!--              <span class="link-block">-->
+<!--                <a href="https://arxiv.org/abs/2011.12948"-->
+<!--                   class="external-link button is-normal is-rounded is-dark">-->
+<!--                  <span class="icon">-->
+<!--                      <i class="ai ai-arxiv"></i>-->
+<!--                  </span>-->
+<!--                  <span>arXiv</span>-->
+<!--                </a>-->
+<!--              </span>-->
+              <!-- Video Link. -->
+<!--              <span class="link-block">-->
+<!--                <a href="https://www.youtube.com/watch?v=MrKrnHhk8IA"-->
+<!--                   class="external-link button is-normal is-rounded is-dark">-->
+<!--                  <span class="icon">-->
+<!--                      <i class="fab fa-youtube"></i>-->
+<!--                  </span>-->
+<!--                  <span>Video</span>-->
+<!--                </a>-->
+<!--              </span>-->
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="https://github.com/PaperCodePreview/FLAME"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span>
+              <!-- Dataset Link. -->
+<!--              <span class="link-block">-->
+<!--                <a href="https://github.com/google/nerfies/releases/tag/0.1"-->
+<!--                   class="external-link button is-normal is-rounded is-dark">-->
+<!--                  <span class="icon">-->
+<!--                      <i class="far fa-images"></i>-->
+<!--                  </span>-->
+<!--                  <span>Data</span>-->
+<!--                  </a>-->
+<!--              </span>-->
+<!--            </div>-->
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</section>
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <video id="teaser" autoplay muted loop playsinline height="100%">
+        <source src="./static/videos/intro.mov"
+                type="video/mp4">
+      </video>
+      <h2 class="subtitle has-text-centered">
+        <span class="dnerf">FLAME</span> ,entirely driven by a Multimodal Large Language Model, can follow instruction and explain the rationale behind its decisions.
+      </h2>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+In real-world tasks that involve interaction between humans and machines, it is crucial to develop an agent that is both reliable and intention-aware. The advent of embodied agents with reasoning ability, powered by Large Language Models (LLM), has been beneficial for Vision-and-Language Navigation (VLN) tasks.
+           </p>
+          <p>
+              However, incorporating LLMs presents challenges such as tuning difficulty and information loss; additionally, most prior work prioritizes evaluating success rate over the reasoning process, yet success does not guarantee robust capabilities. We introduce FLAME, an end-to-end agent entirely driven by a  Multimodal Large Language Model, tailored for urban VLN tasks. FLAME integrates embodied reasoning capabilities, enhancing both explainability and reliability.
+          </p>
+                      <p>
+            We also introduce Urban-VLN-R+, an extended dataset that emphasizes the training and evaluation of agents' reasoning process.
+                        </p>
+                                  <p>
+                          Our experiments demonstrate FLAME's state-of-the-art navigation performance and showcasing reasoning capabilities. This work not only presents a step towards reliable navigation agents but also benefits future M-LLM-based VLN approaches.
+                        </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+      <!-- Paper video. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Demostration</h2>
+      <video id="teaser" autoplay muted loop playsinline height="100%">
+        <source src="./static/videos/Demostration.m4v"
+                type="video/mp4">
+      </video>
+      </div>
+    </div>
+
+    <!--/ Abstract. -->
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+
+    <!-- Animation. -->
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Method Details</h2>
+
+        <!-- Re-rendering. -->
+<!--        <h3 class="title is-4">End-to-End M-LLM Agent with Reasoning Capability</h3>-->
+        <div class="content has-text-justified">
+          <p>
+            Based on the Flamingo architecture, FLAME can navigate well in the urban environment. In reasoning mode, FLAME generates a rationale at key locations prior to decision-making, whereas in legacy mode, it proceeds directly to decisions. The agent operates autoregressively, enabling end-to-end tuning for optimal performance.
+          </p>
+        </div>
+        <div class="content has-text-centered">
+          <video autoplay muted loop playsinline height="100%">
+            <source src="./static/videos/method1.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+
+<!--        <h3 class="title is-4">GPT-Assisted Data Construction and Training Stages</h3>-->
+        <div class="content has-text-justified">
+          <p>
+ Our training procedure incorporates not only the rationales but also the initial captions and summaries. The first phase trains the model on single-perception tasks utilizing caption data. The second phase escalates to handling multi-perceptual input. Finally, the model undergoes an end-to-end fine-tuning to proficiently operate in both legacy and reasoning modes.
+          </p>
+        </div>
+        <div class="content has-text-centered">
+          <video autoplay muted loop playsinline height="100%">
+            <source src="./static/videos/method2.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <!--/ Re-rendering. -->
+
+      </div>
+    </div>
+
+          <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Urban-VLN-R+</h2>
+
+        <div class="content has-text-justified">
+          <p>
+            This crafted dataset serves a dual purpose: it measures the agent’s performance not just in terms of navigational accuracy but also through the coherence and relevance of its generated rationales. This dual metric approach ensures the agent’s reasoning abilities are effective and applicable in real-world scenarios.
+          </p>
+        </div>
+        <div class="content has-text-centered">
+            <img src="./static/images/dataset.png">
+        </div>
+
+      </div>
+    </div>
+
+    <!--/ Concurrent Work. -->
+
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <a class="icon-link" href="https://github.com/" class="external-link" disabled>
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This website is licensed under a <a rel="license"
+                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+          <p>
+            This means you are free to borrow the <a
+              href="https://github.com/nerfies/nerfies.github.io">source code</a> of this website,
+            we just ask that you link back to this page in the footer.
+            Please remember to remove the analytics code included in the header of the website which
+            you do not want on your website.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
